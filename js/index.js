@@ -25,6 +25,7 @@ function showNav(event) {
     }
     setTimeout(() => {
         document.body.style.background = '#aaa';
+        document.body.querySelector('.footer').style.background = '#aaa';
     }, 1000);
 }
 
@@ -32,6 +33,7 @@ function hideNav(event) {
     event.preventDefault();
     navParent.classList.remove('is-open');
     document.body.style.background = '';
+    document.body.querySelector('.footer').style.background = '';
 }
 
 btnToggle.addEventListener('click', showNav);
