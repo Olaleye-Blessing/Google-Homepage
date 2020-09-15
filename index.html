@@ -7,28 +7,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
 </head>
 <body>
     <nav class="nav">
         <div class="nav__items">
             <button class="nav__subitems toggle-btn">&nbsp;</button>
-            <ul class="nav__hidden">Google
-                <!-- <li><div class="svg__con"><img src="svg/home.svg" alt="Home-icon"></div><span>Home</span></li>
-                <li><div class="svg__con"><img src="svg/activity.svg" alt="activity-icon"><span>Search activity</span></div></li>
-                <li><div class="svg__con"><img src="svg/collections.svg" alt="collection-icon"></div><span>Collections</span></li>
-                <li><div class="svg__con"></div><span><hr></span></li>
-                <li><div class="svg__con"><img src="svg/settings.svg" alt="setting-icon"></div><span>Settings</span></li>
-                <li><div class="svg__con"><img src="svg/work.svg" alt="work-icon"></div><span>How Search works</span></li>
-                <li><div class="svg__con"><img src="svg/help.svg" alt="help-icon"></div><span>Help</span></li>
-                <li><div class="svg__con"><img src="svg/feedback.svg" alt="feedback-icon"></div><span>Send feedback</span></li> -->
+            <ul class="nav__hidden"><a href="#"><span class="nav__hidden-home">Google</span></a>
+                <li><a href="#"><div class="svg__con"><img src="svg/home.svg" alt="Home-icon"></div><span class="svg__label">Home</span></a></li>
+                <li><a href="#"><div class="svg__con"><img src="svg/activity.svg" alt="activity-icon"></div><span class="svg__label">Search activity</span></a></li>
+                <li><a href="#"><div class="svg__con"><img src="svg/collections.svg" alt="collection-icon"></div><span class="svg__label">Collections</span></a></li>
+                <hr>
+                <li><a href="#"><div class="svg__con"><img src="svg/settings.svg" alt="setting-icon"></div><span class="svg__label">Settings</span></a></li>
+                <li><a href="#"><div class="svg__con"><img src="svg/work.svg" alt="work-icon"></div><span class="svg__label">How Search works</span></a></li>
+                <li><a href="#"><div class="svg__con"><img src="svg/help.svg" alt="help-icon"></div><span class="svg__label">Help</span></a></li>
+                <li><a href="#"><div class="svg__con"><img src="svg/feedback.svg" alt="feedback-icon"></div><span class="svg__label">Send feedback</span></a></li>
             </ul>
             <div class="nav__subitems"><a href="">ALL</a></div>
             <div class="nav__subitems"><a href="">IMAGES</a></div>
         </div> 
-        <div class="nav__items">
-            <div class="nav__subitems border-round"><a href="">Box</a></div>
-            <div class="nav__gmail nav__subitems border-round"><a href="#">O</a></div>
+        <div class="nav__items js-menu">
+            <div class="nav__subitems border-round">
+                <div class="menu-links"><div class="svg__con"><img src="svg/grid.svg" alt="menu-icon"></div></div>
+                <!-- <div></div> -->
+                <ul class="grid close">
+                    <li class="grid__firstItem"><a href="#"><div>O</div><span>Account</span></a></li>
+                    <li><a href="#"><div><img src="svg/001-google.svg" alt="Google-svg"></div><span>Search</span></a></li>
+                    <li><a href=""><div><img src="svg/002-google-maps.svg" alt="map-svg"></div><span>Maps</span></a></li>
+                    <li><a href="https://www.youtube.com/"><div><img src="svg/003-youtube.svg" alt="youtube-svg"></div><span>Youtube</span></a></li>
+                    <li><a href="#"><div><img src="svg/004-google-play.svg" alt="play-svg"></div><span>Play</span></a></li>
+                    <li><a href="#"><div><img src="svg/005-google-1.svg" alt="news-svg"></div><span>News</span></a></li>
+                    <li><a href="#"><div><img src="svg/006-gmail.svg" alt="gmail-svg"></div><span>Gmail</span></a></li>
+                    <li><a href="#"><div><img src="svg/007-hangouts-meet.svg" alt="meet-svg"></div><span>Meet</span></a></li>
+                    <li><a href="#"><div><img src="svg/contacts.svg" alt="contact-svg"></div><span>Contacts</span></a></li>
+                    <li><a href="#"><div><img src="svg/009-google-drive.svg" alt="drive-svg"></div><span>Drive</span></a></li>
+                    <li><a href="#"><div><img src="svg/calendar.svg" alt="calendar-svg"></div><span>Calendar</span></a></li>
+                    <li><a href="#"><div><img src="svg/011-google-2.svg" alt="Translate-svg"></div><span>Translate</span></a></li>
+                    <li><a href="#"><div><img src="svg/012-google-photos.svg" alt="photos-svg"></div><span>Photos</span></a></li>
+                    <li><a href="#"><div><img src="svg/duo.svg" alt="duo-svg"></div><span>Duo</span></a></li>
+                </ul>
+            </div>
+            <div class="nav__gmail nav__subitems border-round"><div class="menu-links">O</div></div>
         </div>
     </nav>
+
+    <header class="header">
+        <div class="header__box">
+            <img class="header__logo" src="png/googlelogo_color_272x92dp.png" alt="header-image">
+        </div>
+    </header>
+
+    <main>
+        <form action="" class="form">
+            <div>
+                <input type="search" name="search" id="search">
+            </div>
+        </form>
+
+        <section class="language">
+            <p>Google offered in:</p>
+            <div>
+                <li><a href="#">Hausa</a></li>
+                <li><a href="#">Igbo</a></li>
+                <li><a href="#">Ede Yoruba</a></li>
+                <li><a href="#">Nigeria Pidgin</a></li>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__location">Nigeria</div>
+        <div class="footer__others">
+            <div><strong>Unknown</strong> - Use Precise Location</div>
+            <div class="footer__utilities">
+                <li>Settings</li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">About</a></li>
+            </div>
+        </div>
+        
+    </footer>
 </body>
 </html>
