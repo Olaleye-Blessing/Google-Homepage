@@ -6,6 +6,7 @@
     <meta name="Description" content="Using HTML, CSS and little of Javascript to create a clone og google's homepage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
+    <link rel="shortcut icon" href="svg/001-google.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js" defer></script>
 </head>
@@ -23,15 +24,15 @@
                 <li><a href="#"><div class="svg__con"><img src="svg/help.svg" alt="help-icon"></div><span class="svg__label">Help</span></a></li>
                 <li><a href="#"><div class="svg__con"><img src="svg/feedback.svg" alt="feedback-icon"></div><span class="svg__label">Send feedback</span></a></li>
             </ul>
-            <div class="nav__subitems"><a href="">ALL</a></div>
-            <div class="nav__subitems"><a href="">IMAGES</a></div>
+            <div class="nav__subitems js-active active"><a class="active-child" href="">ALL</a></div>
+            <div class="nav__subitems js-active"><a class="" href="">IMAGES</a></div>
         </div> 
         <div class="nav__items js-menu">
             <div class="nav__subitems border-round">
                 <div class="menu-links"><div class="svg__con"><img src="svg/grid.svg" alt="menu-icon"></div></div>
                 <!-- <div></div> -->
-                <ul class="grid close">
-                    <li class="grid__firstItem"><a href="#"><div>O</div><span>Account</span></a></li>
+                <ul class="grid close grid--shadow">
+                    <li class="grid__firstItem"><a href="#"><div class="bg-green border-round menu-links">O</div><span>Account</span></a></li>
                     <li><a href="#"><div><img src="svg/001-google.svg" alt="Google-svg"></div><span>Search</span></a></li>
                     <li><a href=""><div><img src="svg/002-google-maps.svg" alt="map-svg"></div><span>Maps</span></a></li>
                     <li><a href="https://www.youtube.com/"><div><img src="svg/003-youtube.svg" alt="youtube-svg"></div><span>Youtube</span></a></li>

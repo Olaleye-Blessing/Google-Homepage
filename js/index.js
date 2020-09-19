@@ -1,10 +1,14 @@
 
 
+const nav = document.querySelector('.nav');
+
 const btnToggle = document.querySelector('.toggle-btn');
 
 const navHome = document.querySelector('.nav__hidden-home');
 
 const navParent = document.querySelector('.nav__hidden');
+
+const menu = document.querySelector('.js-menu');
 
 function showNav(event) {
     event.preventDefault();
@@ -42,7 +46,7 @@ navHome.addEventListener('click', hideNav);
 
 // document.body.addEventListener('click', hideNav);
 
-const menu = document.querySelector('.js-menu');
+// const menu = document.querySelector('.js-menu');
 
 function menuToggle(event) {
     // event.preventDefault();
@@ -62,3 +66,21 @@ function menuToggle(event) {
 
 menu.addEventListener('click', menuToggle);
 
+function activateBlue(event) {
+    event.preventDefault();
+    let target = event.target.closest('.js-active');
+
+    if (!target) return;
+
+    for (const element of document.querySelectorAll('.js-active')) {
+        if(element.classList.contains('active')) {
+            element.classList.remove('active');
+            element.firstElementChild.classList.remove('active-child');
+        }
+    }
+
+    target.classList.add('active');
+    target.firstElementChild.classList.add('active-child');
+}
+
+nav.addEventListener('click', activateBlue)

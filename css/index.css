@@ -38,6 +38,23 @@ hr {
   width: 100%;
 }
 
+.active {
+  -webkit-border-after: 0.2rem solid royalblue;
+          border-block-end: 0.2rem solid royalblue;
+}
+
+.active-child:-webkit-any-link {
+  color: royalblue;
+}
+
+.active-child:-moz-any-link {
+  color: royalblue;
+}
+
+.active-child:any-link {
+  color: royalblue;
+}
+
 .border-round {
   border-radius: 50%;
 }
@@ -52,6 +69,11 @@ hr {
 
 .menu-links {
   cursor: pointer;
+  color: #fff;
+}
+
+.bg-green {
+  background-color: green;
 }
 
 .nav {
@@ -129,6 +151,7 @@ hr {
           margin-block-end: 2rem;
   display: block;
   background-image: linear-gradient(125deg, rgba(124, 124, 124, 0.959), rgba(121, 118, 118, 0.667), rgba(114, 114, 114, 0.667));
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 1.8rem;
@@ -139,6 +162,7 @@ hr {
   margin-block-end: 2rem;
   display: block;
   background-image: linear-gradient(125deg, rgba(124, 124, 124, 0.959), rgba(121, 118, 118, 0.667), rgba(114, 114, 114, 0.667));
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 1.8rem;
@@ -151,6 +175,7 @@ hr {
           margin-block-end: 2rem;
   display: block;
   background-image: linear-gradient(125deg, rgba(124, 124, 124, 0.959), rgba(121, 118, 118, 0.667), rgba(114, 114, 114, 0.667));
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 1.8rem;
@@ -161,6 +186,7 @@ hr {
   font-size: 2rem;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, blue), color-stop(30%, red), color-stop(50%, yellow), color-stop(70%, blue), color-stop(80%, green), to(red));
   background-image: linear-gradient(90deg, blue 10%, red 30%, yellow 50%, blue 70%, green 80%, red);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   letter-spacing: .1rem;
@@ -241,19 +267,27 @@ hr {
 .grid > li > a:-webkit-any-link > div {
   inline-size: 3rem;
   text-align: center;
-  font-size: 3.4rem;
+  font-size: 2.3rem;
+  padding: 0.2rem;
 }
 
 .grid > li > a:-moz-any-link > div {
   inline-size: 3rem;
   text-align: center;
-  font-size: 3.4rem;
+  font-size: 2.3rem;
+  padding: 0.2rem;
 }
 
 .grid > li > a:any-link > div {
   inline-size: 3rem;
   text-align: center;
-  font-size: 3.4rem;
+  font-size: 2.3rem;
+  padding: 0.2rem;
+}
+
+.grid--shadow {
+  -webkit-box-shadow: 0rem 0rem 0.3rem 0.1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0rem 0rem 0.3rem 0.1rem rgba(0, 0, 0, 0.3);
 }
 
 .header {
